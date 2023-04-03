@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.inventoryPageTest">
+        <methods>
+          <include name="verifyProductLebalTest"/>
+          <include name="verifyItemImageTest"/>
+        </methods>
+      </class> <!-- testCases.inventoryPageTest -->
+      <class name="testCases.loginPageTest">
+        <methods>
+          <include name="verifyLoginPageURLTest"/>
+          <include name="verifyLoginLogoTest"/>
+        </methods>
+      </class> <!-- testCases.loginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
